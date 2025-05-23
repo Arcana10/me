@@ -1,0 +1,146 @@
+.__box_header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.__header {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    padding: .3rem .6rem;
+    align-items: center;
+    border-radius: 100px;
+    justify-content: space-between;
+    background-color: rgba(24,24,27,.4);
+    backdrop-filter: blur(25px);
+    border: 1px solid hsla(0,0%,100%,.1);
+}
+
+.__colA {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.__a_logo {
+    display: grid;
+    width: 45px;
+    height: 45px;
+    place-items: center;
+}
+
+.__nav_hidden {
+    display: none;
+}
+
+.__a_redes {
+    display: grid;
+    width: 30px;
+    height: 30px;
+    place-items: center;
+}
+
+.__icon_redes {
+    width: 18px;
+    height: 18px;
+}
+
+.__btn_menu {
+    display: grid;
+    width: 40px;
+    height: 40px;
+    place-items: center;
+    border-radius: 100px;
+    background-color: rgba(39, 39, 42, 1);
+}
+
+@media (min-width: 768px) {
+    .__nav_hidden {
+        display: block;
+    }
+    .__a_redes {
+        width: 40px;
+        height: 40px;
+    }
+    .__icon_redes {
+        width: 24px;
+        height: 24px;
+    }
+    .__btn_menu {
+        display: none;
+   }
+}
+
+@media (min-width: 1024px) {
+    .__header {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .__header {
+        width: 40%;
+    }
+}
+
+.__dialog {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    right: -60%;
+    width: 60%;
+    height: 100dvh;
+    padding: 1rem;
+    transition: .4s ease all;
+    border-left: 1px solid hsl(240 3.7% 15.9%);
+    background-color: rgba(24,24,27,.8);
+    backdrop-filter: blur(12px);
+}
+
+.__dialog_active {
+    right: 0;
+}
+
+.__closed_dialog {
+    position: fixed;
+    right: 20px;
+    display: grid;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    place-items: center;
+    background-color: hsl(240 10% 3.9%);
+}
+
+.__nav_dialog {
+    display: flex;
+    gap: 1rem;
+    padding-top: 60px;
+    flex-direction: column;
+}
+
+.__item_dialog {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: .5rem 0rem;
+    transition: .4s ease all;
+    --tw-text-opacity: 1;
+    color: rgb(156 163 175/var(--tw-text-opacity));
+}
+
+.__icon_dialog {
+    --tw-text-opacity: 1;
+    transition: .4s ease all;
+    stroke: rgb(156 163 175/var(--tw-text-opacity));
+}
+
+.__item_dialog:hover {
+    color: var(--white);
+}
+
+.__item_dialog:hover .__icon_dialog {
+    stroke: var(--white);
+}

@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #FFFFFF;
+    --Woodsmoke-50: #f6f6f6;
+    --Woodsmoke-100: #e7e7e7;
+    --Woodsmoke-200: #d1d1d1;
+    --Woodsmoke-300: #b0b0b0;
+    --Woodsmoke-400: #888888;
+    --Woodsmoke-500: #6d6d6d;
+    --Woodsmoke-600: #5d5d5d;
+    --Woodsmoke-700: #4f4f4f;
+    --Woodsmoke-800: #454545;
+    --Woodsmoke-900: #3d3d3d;
+    --Woodsmoke-950: #000000;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    width: 100dvw;
+    height: 100dvh;
+    font-size: 14px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    color: var(--white);
+    background-color: var(--Woodsmoke-950);
+}
+
+
+ul, li, ol {
+    list-style: none;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: none;
+    font-family: 'MontSerrat', sans-serif;
+}
+
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.tabler-icon {
+    stroke-width: 1;
+    stroke: var(--white);
+}

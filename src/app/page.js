@@ -1,95 +1,55 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import main from "./ui/home.module.css";
+import Avvvatars from 'avvvatars-react'
+import Header from "./ui/Header";
+import Link from "next/link";
+import { IconArrowRight, IconExternalLink } from "@tabler/icons-react";
 
-export default function Home() {
-  return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+export default function Page () {
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+    return (
+
+        <>
+
+            <Header/>
+
+            <main role="main" className={main.main}>
+
+                <section role="article" className={main.section}>
+                    <div className={main.rowA}>
+                        <figure className={main.avatar}>
+                            <Avvvatars size={50} value="Franco Pérez" style="shape" />
+                        </figure>
+                        <div>
+                            <h2 className={main.txt_name}>Franco Pérez</h2>
+                            <p className={main.txt_position}>Desarrollador web & UI/UX</p>
+                        </div>
+                    </div>
+                    <div className={main.rowB}>
+                        <p className={main.parragraph}>
+                            🚀 Soy Desarrollador de Software y Diseñador UI/UX. Transformo ideas en productos digitales memorables, 
+                            combinando código limpio con diseño estratégico para generar impacto real.
+                        </p>
+                        <p className={main.parragraph}>💬 Preguntame sobre Desarrollo web, Diseño o como puedo ayudarte</p>
+                        <p className={main.parragraph}>Actualmente trabajo en <Link href={'https://arcana.codes/?source_page=francodev'} target="_blank" className={main.currently_link}>ARCANA <IconExternalLink size={18} className={main.icon_currently_link}/></Link></p>
+                        <button type="button" role="button" className={main.btn_chat}>
+                            <span className={main.icon_btn_chat}>🪄</span>
+                            <span>Pregúntale a la IA algo sobre mí...</span>
+                        </button>
+                    </div>
+                </section>
+
+                <section role="article" className={main.section}>
+                    <div className={main.section_header}>
+                        <h1 className={main.subtit}>Proyectos</h1>
+                        <button type="button" role="button" className={main.btn_more}>Ver todos <IconArrowRight/></button>
+                    </div>
+                    <div></div>
+                </section>
+
+            </main>
+
+        </>
+
+    )
+
 }

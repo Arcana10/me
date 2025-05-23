@@ -1,0 +1,112 @@
+.main {
+    width: 90%;
+    margin: 2rem auto;
+}
+
+.section {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.rowA {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.avatar {
+    display: grid;
+    width: 60px;
+    height: 60px;
+    place-items: center;
+    border-radius: 100px;
+    background-color: #181818;
+}
+
+.txt_name {
+    margin-bottom: .2rem;
+}
+
+.txt_position {
+    font-size: .8rem;
+    font-weight: 400;
+    color: #686868;
+}
+
+.rowB {
+    margin-bottom: 1rem;
+}
+
+.parragraph {
+    font-size: .9rem;
+    line-height: 24px;
+    margin-bottom: 1rem;
+    color: #D4D4D4;
+}
+
+.currently_link {
+    --tw-text-opacity: 1;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    color: rgb(52 211 153/var(--tw-text-opacity));
+}
+
+.icon_currently_link {
+    --tw-text-opacity: 1;
+    stroke: rgb(52 211 153/var(--tw-text-opacity));
+}
+
+.btn_chat {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    color: #686868;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgba(24,24,27,.4);
+    backdrop-filter: blur(25px);
+    border: 1px solid hsla(0,0%,100%,.1);
+}
+
+.icon_btn_chat {
+    display: grid;
+    width: 60px;
+    height: 60px;
+    place-items: center;
+}
+
+.section_header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subtit {
+    font-size: .9rem;
+    color: hsla(0,0%,100%,.5);
+    text-transform: uppercase;
+}
+
+.btn_more {
+    display: flex;
+    gap: 1rem;
+    border-radius: 5px;
+    align-items: center;
+    padding: .2rem .5rem;
+    color: #686868;
+}
+
+.btn_more:hover {
+    background-color: rgba(24,24,27,.8);
+}
+
+
+@media (min-width: 1440px) {
+    .main {
+        width: 40%;
+    }
+}
