@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Franco Pérez — Portafolio Profesional
 
-First, run the development server:
+Este es mi sitio web personal desarrollado con Next.js, donde muestro mi experiencia como Desarrollador Web y Diseñador UI/UX, fusionando creatividad con código para construir experiencias digitales de alto impacto.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# 🚀 Tecnologías principales
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- *Next.js* — Framework React para producción.
+- *React* — Interfaz de usuario rápida y modular.
+- *Tailwind CSS* — Utilidades para diseño moderno y responsivo.
+- *JavaScript / HTML / CSS
+- *Diseño UI/UX* — Figma, Prototipado interactivo, Accesibilidad.
+- *SEO Técnico* — Optimización avanzada para motores de búsqueda.
+- *Git / GitHub* — Control de versiones.
+- *Socket.IO* — Comunicación en tiempo real.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+# 📞 Contacto
 
-To learn more about Next.js, take a look at the following resources:
+Si estás interesado en trabajar juntos o deseas más información:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- 📧 Correo: j1h2a3n4s@gmail.com
+- 📱 WhatsApp: +51 995 984 231
+- 🌐 Sitio web: https://franco.arcana.codes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+# 📌 Sobre mí
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Soy Franco Pérez, un desarrollador web y diseñador UI/UX apasionado por construir productos digitales funcionales, escalables y visualmente atractivos. Además, lidero ARCANA CORP SAC, donde impulsamos proyectos tecnológicos con visión de futuro desde Jauja, Junín, Perú.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+# 📎 Créditos
+
+Creado con ❤️ usando Next.js y desplegado con Netlify.
