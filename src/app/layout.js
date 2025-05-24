@@ -7,16 +7,17 @@ const jsonLd = {
     "name": "Franco Pérez",
     "alternateName": "Jhans Franco Pérez Caro",
     "url": "https://franco.arcana.codes",
-    "image": "https://franco.arcana.codes/tu-foto.jpg",
+    "image": "https://franco.arcana.codes/og_image.png",
     "jobTitle": "Desarrollador Web y Diseñador UI/UX",
     "worksFor": {
         "@type": "Organization",
         "name": "ARCANA CORP SAC"
     },
     "sameAs": [
-        "https://github.com/tuusuario",
-        "https://www.linkedin.com/in/tuusuario",
-        "https://x.com/tuusuario"
+        "https://github.com/JFrancodev12",
+        "https://www.linkedin.com/in/jhans-perez-caro-252623207/",
+        "https://x.com/Franco30712726",
+        "https://www.tiktok.com/@francoperezcaro"
     ],
     "description": "Soy Franco Pérez, desarrollador web y diseñador UI/UX especializado en crear experiencias digitales impactantes.",
     "address": {
@@ -24,7 +25,9 @@ const jsonLd = {
         "addressLocality": "Jauja",
         "addressRegion": "Junín",
         "addressCountry": "PE"
-    }
+    },
+    "email": "mailto:j1h2a3n4s@gmail.com",
+    "telephone": "+51995984231",
 };
 
 export default function RootLayout ({children}) {
@@ -50,14 +53,14 @@ export default function RootLayout ({children}) {
                 <meta property="og:description" content="Transformo ideas en experiencias digitales memorables. Descubre mi portafolio de desarrollo web y diseño UI/UX." />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://franco.arcana.codes" />
-                <meta property="og:image" content="https://franco.arcana.codes/og-image.jpg" />
+                <meta property="og:image" content="https://franco.arcana.codes/og_image.png" />
 
                 {/* Twitter Card */}
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:title" content="Franco Pérez | Desarrollador Web & Diseñador UI/UX" />
                 <meta name="twitter:description" content="Desarrollo software con estilo. Diseño interfaces con impacto. Conoce mi trabajo aquí." />
-                <meta name="twitter:image" content="https://franco.arcana.codes/og-image.jpg" />
-                <meta name="twitter:creator" content="@tuUsuarioTwitter" />
+                <meta name="twitter:image" content="https://franco.arcana.codes/og_image.png" />
+                <meta name="twitter:creator" content="@Franco30712726" />
 
                 {/* PWA + UX */}
                 <meta name="theme-color" content="#000000" />

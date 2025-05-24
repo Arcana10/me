@@ -18,7 +18,7 @@ export default function Header () {
             <div className={styles.__box_header}>
                 <header className={styles.__header}>
                     <div className={styles.__colA}>
-                        <Link href={'/'} className={styles.__a_logo}>
+                        <Link href={'https://franco.arcana.codes'} className={styles.__a_logo}>
                             <Image src={'/LOGO_NAME.svg'} alt="Franco Pérez | Desarrollador web" width={35} height={35} />
                         </Link>
                         <nav className={styles.__nav_hidden} role="navigation">
@@ -33,9 +33,9 @@ export default function Header () {
                         </nav>
                     </div>
                     <div className={constants.fcenter} style={{gap: 5}}>
-                        <Link href={'/'} className={styles.__a_redes}><IconBrandGithub className={styles.__icon_redes}/></Link>
-                        <Link href={'/'} className={styles.__a_redes}><IconBrandLinkedin className={styles.__icon_redes}/></Link>
-                        <Link href={'/'} className={styles.__a_redes}><IconBrandX className={styles.__icon_redes}/></Link>
+                        <Link href={'https://github.com/JFrancodev12'} target="_blank" className={styles.__a_redes}><IconBrandGithub className={styles.__icon_redes}/></Link>
+                        <Link href={'https://www.linkedin.com/in/jhans-perez-caro-252623207/'} target="_blank" className={styles.__a_redes}><IconBrandLinkedin className={styles.__icon_redes}/></Link>
+                        <Link href={'https://x.com/Franco30712726'} target="_blank" className={styles.__a_redes}><IconBrandX className={styles.__icon_redes}/></Link>
                         <button className={styles.__btn_menu} onClick={toogleDialog}><IconMenu/></button>
                     </div>
                 </header>
