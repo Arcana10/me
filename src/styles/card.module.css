@@ -1,0 +1,17 @@
+.box {
+    width: 200px;
+    height: 300px;
+    min-width: 200px;
+    border-radius: 10px;
+    background-color: rgba(24,24,27,.4);
+    backdrop-filter: blur(25px);
+    border: 1px solid hsla(0,0%,100%,.1);
+}
+
+.box:first-child {
+    margin-left: 1rem;
+}
+
+.box:last-child {
+    margin-right: 1rem;
+}

@@ -4,6 +4,7 @@
     border: none;
     user-select: none;
     box-sizing: border-box;
+    font-family: 'MontSerrat', sans-serif;
 }
 
 :root {
@@ -19,6 +20,8 @@
     --Woodsmoke-800: #454545;
     --Woodsmoke-900: #3d3d3d;
     --Woodsmoke-950: #000000;
+
+    --font-family: 'MontSerrat', sans-serif;
     
 }
 
@@ -29,7 +32,6 @@ html {
 body {
     position: relative;
     width: 100dvw;
-    height: 100dvh;
     font-size: 14px;
     overflow-y: auto;
     overflow-x: hidden;
@@ -37,6 +39,9 @@ body {
     background-color: var(--Woodsmoke-950);
 }
 
+input, select, textarea {
+    outline: none;
+}
 
 ul, li, ol {
     list-style: none;

@@ -1,0 +1,27 @@
+.box {
+    display: grid;
+    width: 100dvw;
+    height: 100dvh;
+    place-items: center;
+}
+
+.row {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tit {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.link {
+    display: block;
+    width: fit-content;
+    padding: .8rem 1rem;
+    border-radius: 10px;
+    background-color: #181818;
+}

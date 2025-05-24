@@ -1,6 +1,7 @@
 .__box_header {
     position: sticky;
     top: 0;
+    z-index: 1;
     width: 100%;
     padding: 1rem 0;
 }
@@ -35,6 +36,15 @@
     display: none;
 }
 
+.__nav_item {
+    color: var(--white);
+}
+
+.__nav_item_active {
+    text-underline-offset: 4px;
+    text-decoration: underline;
+}
+
 .__a_redes {
     display: grid;
     width: 30px;
@@ -58,7 +68,10 @@
 
 @media (min-width: 768px) {
     .__nav_hidden {
-        display: block;
+        display: flex;
+        padding-left: .5rem;
+        gap: 1.5rem;
+        align-items: center;
     }
     .__a_redes {
         width: 40px;
@@ -86,7 +99,7 @@
 }
 
 .__dialog {
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 1;
     right: -60%;

@@ -1,11 +1,17 @@
 .main {
-    width: 90%;
+    width: 100%;
     margin: 2rem auto;
 }
 
 .section {
-    width: 100%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 1rem;
+}
+
+.section_top {
+    margin-top: 2rem;
 }
 
 .rowA {
@@ -20,6 +26,7 @@
     display: grid;
     width: 60px;
     height: 60px;
+    min-width: 60px;
     place-items: center;
     border-radius: 100px;
     background-color: #181818;
@@ -104,9 +111,125 @@
     background-color: rgba(24,24,27,.8);
 }
 
+/* SCROLLING PROJECTS */
+
+.section_projects {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.section_currently {
+    width: 90%;
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 0rem auto 2rem auto;
+    background-color: #161617;
+}
+
+.dot_avaible {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 100px;
+    background-color: rgb(52 211 153/1);
+}
+
+.txt_call {
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding-top: 2rem;
+    line-height: 2.25rem;
+}
+
+.txt_info {
+    padding-top: 1.5rem;
+}
+
+.headquarter {
+    font-size: .9rem;
+    color: var(--white);
+}
+
+.country {
+    display: inline-block;
+    font-size: .6rem;
+    padding: .2rem .3rem;
+    background-color: #181818;
+}
+
+.timezone {
+    font-size: .75rem;
+    color: hsla(0,0%,100%,.5);
+}
+
+.section_say {
+    position: relative;
+}
+
+.image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.tit {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(80deg,#ac63ff,#dd7437 40%);
+}
+
+.txt_secondary {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+.tabler {
+    padding: .5rem;
+    margin-top: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid hsla(0,0%,100%,.2);
+}
+
+.tabler_line {
+    width: 100%;
+    height: 1px;
+    margin: .25rem;
+    background-color: hsla(0,0%,100%,.1);
+}
+
+.tabler_item {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    font-weight: 500;
+    align-items: center;
+    padding: .5rem 1rem;
+    color: var(--white);
+    border-radius: 5px;
+}
+
+.tabler_item:hover {
+    --accent: 240 3.7% 15.9%;
+    background-color: hsl(var(--accent));
+}
+
+@media (min-width: 1024px) {
+    .section {
+        width: 60%;
+    }
+    .section_currently {
+        width: 60%;
+    }
+}
 
 @media (min-width: 1440px) {
-    .main {
+    .section {
+        width: 40%;
+    }
+    .section_currently {
         width: 40%;
     }
 }

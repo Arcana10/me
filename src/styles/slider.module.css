@@ -1,0 +1,34 @@
+.sliderWrapper {
+    overflow: hidden;
+    width: 100%;
+}
+  
+.sliderTrack {
+    display: flex;
+    width: fit-content;
+    animation: scroll 30s linear infinite;
+}
+
+.sliderWrapper:hover .sliderTrack {
+    animation-play-state: paused;
+}
+  
+.sliderTrack > * {
+    flex: 0 0 auto;
+    margin-right: 1rem;
+}
+  
+/* Ocultar scrollbar opcionalmente */
+.sliderWrapper::-webkit-scrollbar {
+    display: none;
+}
+  
+/* Animación */
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}

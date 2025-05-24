@@ -1,5 +1,6 @@
 import '@/app/ui/global.css'
 import { montserrat } from "./ui/fonts";
+import Header from './ui/Header';
 
 const jsonLd = {
     "@context": "https://schema.org",
@@ -75,7 +76,10 @@ export default function RootLayout ({children}) {
                 <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
             </head>
-            <body className={`${montserrat.className} antialiased`}>{children}</body>
+            <body className={`${montserrat.className} antialiased`}>
+                <Header/>
+                {children}
+            </body>
         </html>
 
     )
