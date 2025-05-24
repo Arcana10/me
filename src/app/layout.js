@@ -38,7 +38,7 @@ export default function RootLayout ({children}) {
         <html lang="en">
             <head>
                 <meta charSet="UTF-8" />
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
 
                 {/* SEO Básico */}
                 <title>Franco Pérez | Desarrollador Web & Diseñador UI/UX</title>
@@ -63,9 +63,14 @@ export default function RootLayout ({children}) {
                 <meta name="twitter:image" content="https://franco.arcana.codes/og_image.png" />
                 <meta name="twitter:creator" content="@Franco30712726" />
 
+                <meta name="mobile-web-app-capable" content="yes" />
+                <meta name="apple-mobile-web-app-capable" content="yes" />
+                <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+                <link rel="apple-touch-icon" href="/logo-192.png" />
+
                 {/* PWA + UX */}
                 <meta name="theme-color" content="#000000" />
-                <link rel="manifest" href="/site.webmanifest" />
+                <link rel="manifest" href="/manifest.json" />
 
                 {/* Accesibilidad y rendimiento */}
                 <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
