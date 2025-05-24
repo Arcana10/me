@@ -69,6 +69,8 @@ export default function RootLayout ({children}) {
                 {/* Accesibilidad y rendimiento */}
                 <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
 
+                <meta name="google-site-verification" content="S1JDbA89n-_cSYc22VJzdFXPKPtXNBsnLiPhUmK2v00" />
+
                 {/* Datos estructurados */}
                 <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
