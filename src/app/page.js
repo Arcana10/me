@@ -60,7 +60,7 @@ export default function Page () {
                 <section role="article" className={`${main.section} ${main.section_top}`}>
                     <div className={main.section_header}>
                         <h1 className={main.subtit}>Proyectos</h1>
-                        <button type="button" role="button" className={main.btn_more}>Ver todos <IconArrowRight/></button>
+                        <Link href={'/project/all'} role="button" className={main.btn_more}>Ver todos <IconArrowRight/></Link>
                     </div>
                 </section>
 

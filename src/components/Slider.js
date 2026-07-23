@@ -1,16 +1,35 @@
 import slider from '@/styles/slider.module.css'
 import Project from './Project'
+import { useEffect } from 'react';
+import { useProjects } from '@/context/DBContext';
 
 export default function Slider() {
-  const items = Array.from({ length: 10 });
+
+    const { projects, fetchProjects, loading } = useProjects()
+
+    useEffect(() => {
+
+        fetchProjects();
+
+    }, [])
 
     return (
-        <div className={slider.sliderWrapper}>
-            <div className={slider.sliderTrack}>
-                {items.concat(items).map((_, i) => (
-                    <Project key={i} i={i % items.length} />
-                ))}
-            </div>
-        </div>
+
+        <>
+            {loading ? (
+                <div className={slider.projectSkeleton}>
+                    <span className={slider.loader}></span>
+                </div>  
+            ) : (
+                <div className={slider.sliderWrapper}>
+                    <div className={slider.sliderTrack}>
+                        {projects.concat(projects).map((project, index) => (
+                            <Project key={index} project={project} />
+                        ))}
+                    </div>
+                </div>
+            )}
+        </>
+        
     )
 }

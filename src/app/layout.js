@@ -1,6 +1,7 @@
 import '@/app/ui/global.css'
 import { montserrat } from "./ui/fonts";
 import Header from './ui/Header';
+import { DBProvider } from '@/context/DBContext';
 
 const jsonLd = {
     "@context": "https://schema.org",
@@ -82,8 +83,10 @@ export default function RootLayout ({children}) {
 
             </head>
             <body className={`${montserrat.className} antialiased`}>
-                <Header/>
-                {children}
+                <DBProvider>
+                    <Header/>
+                    {children}
+                </DBProvider>
             </body>
         </html>
 

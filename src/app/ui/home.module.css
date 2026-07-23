@@ -208,7 +208,7 @@
     align-items: center;
     padding: .5rem 1rem;
     color: var(--white);
-    border-radius: 5px;
+    border-radius: calc(1rem/2);
 }
 
 .tabler_item:hover {
